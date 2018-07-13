@@ -1,4 +1,5 @@
-IO_Experiments is a developer kit on a single board. The developer can connect any uC board including Arduino , Nucleo , RasperryPi to any of the periferics on this board.
+IO_Experiments is a developer kit on a single board. The developer can connect any uC board including Arduino , Nucleo , RasperryPi to any of the devices on this board.
+
 The board contains:
 1. LCD 16x2 alphanumeric;
 2. 8xleds driven by ULN2803;
