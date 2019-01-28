@@ -26,6 +26,4 @@ The board contains:
 
 The boards has a 5V 3A power regulator and 3.3V 800mA power regulator.
 
-![Screenshot](IO_Experiments_Development_Board/IO_Experiment_Board.png)
-
-<img src="IO_Experiments_Development_Board/IO_Experiment_Board.png" alt="The Board"/>
+<img src="IO_Experiments_Development_Board/IO_Experiment_Board.png" alt="IO_EXPERIMENT_BOARD"/>
