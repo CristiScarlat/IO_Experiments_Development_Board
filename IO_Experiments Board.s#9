@@ -1185,7 +1185,9 @@ SIEMENS TLE4270</description>
 <connect gate="G$1" pin="O8" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="ULN2803" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5157,6 +5159,7 @@ distributor Buerklin, 17G562</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="OC_FARNELL" value="1255223" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="VALUE" value="3DIP_SW" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5193,6 +5196,7 @@ distributor Buerklin, 17G562</description>
 <attribute name="MPN" value="DS08" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="73J0071" constant="no"/>
+<attribute name="VALUE" value="8DIP_SW" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -23865,9 +23869,9 @@ EC12E series with push-on switch</description>
 </class>
 </classes>
 <parts>
-<part name="JP1" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="JP2" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="IC1" library="Integrated Circuits" deviceset="ULN2803A" device=""/>
+<part name="LEDS" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="BUTTONS" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="IC1" library="Integrated Circuits" deviceset="ULN2803A" device="" value="ULN2803"/>
 <part name="GND1" library="PowerTags" deviceset="GND" device=""/>
 <part name="R1" library="rezistors" deviceset="R" device="RS1/8" value="220"/>
 <part name="R2" library="rezistors" deviceset="R" device="RS1/8" value="220"/>
@@ -23905,8 +23909,8 @@ EC12E series with push-on switch</description>
 <part name="P+2" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND2" library="PowerTags" deviceset="GND" device=""/>
 <part name="DIS1" library="opto" deviceset="TUXGR_16X2_R2" device=""/>
-<part name="JP3" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="JP4" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="LCDH" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="LCDL" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="CONTRAST" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
 <part name="P+3" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND3" library="PowerTags" deviceset="GND" device=""/>
@@ -23933,14 +23937,14 @@ EC12E series with push-on switch</description>
 <part name="R26" library="rezistors" deviceset="R" device="RS1/8" value="4.7k"/>
 <part name="R27" library="rezistors" deviceset="R" device="RS1/8" value="4.7k"/>
 <part name="R28" library="rezistors" deviceset="R" device="RS1/8" value="4.7k"/>
-<part name="JP5" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="7SEG" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="GND6" library="PowerTags" deviceset="GND" device=""/>
 <part name="GND7" library="PowerTags" deviceset="GND" device=""/>
 <part name="GND8" library="PowerTags" deviceset="GND" device=""/>
 <part name="GND9" library="PowerTags" deviceset="GND" device=""/>
 <part name="GND10" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+4" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C2" library="capacitors" deviceset="C" device="5/2.5"/>
+<part name="C2" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND11" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+5" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND12" library="PowerTags" deviceset="GND" device=""/>
@@ -23948,37 +23952,37 @@ EC12E series with push-on switch</description>
 <part name="Q1" library="SmartHomePLC_Licenta" deviceset="CRYSTAL_THT" device="" value="32.768 kHz"/>
 <part name="GND14" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+6" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C8" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C8" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND15" library="PowerTags" deviceset="GND" device=""/>
 <part name="R29" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R30" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="IC4" library="SmartHomePLC_Licenta" deviceset="MCP23017" device="SP"/>
 <part name="GND17" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+7" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C10" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C10" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND18" library="PowerTags" deviceset="GND" device=""/>
 <part name="JP6" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="JP7" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="C3" library="capacitors" deviceset="CPOL-EU" device="E2.5-6"/>
+<part name="C3" library="capacitors" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
 <part name="GND16" library="PowerTags" deviceset="GND" device=""/>
-<part name="JP8" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="COMMUNICATION" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="GND19" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+8" library="PowerTags" deviceset="+5V" device=""/>
-<part name="S9" library="switch-misc" deviceset="DS03" device=""/>
+<part name="S9" library="switch-misc" deviceset="DS03" device="" value="3DIP_SW"/>
 <part name="R31" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R32" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R33" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="P+9" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND20" library="PowerTags" deviceset="GND" device=""/>
-<part name="R34" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R35" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R36" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R37" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R38" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R39" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R40" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="R41" library="POT" deviceset="TRIM_EU-" device="CA6V"/>
-<part name="JP9" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="R34" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R35" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R36" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R37" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R38" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R39" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R40" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="R41" library="POT" deviceset="TRIM_EU-" device="CA6V" value="20k"/>
+<part name="POTS" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="P+10" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND13" library="PowerTags" deviceset="GND" device=""/>
 <part name="U$5" library="eagle-library-edeca.net-v5" deviceset="LMD12088AUE-101A" device=""/>
@@ -23988,23 +23992,23 @@ EC12E series with push-on switch</description>
 <part name="GND21" library="PowerTags" deviceset="GND" device=""/>
 <part name="R43" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="GND22" library="PowerTags" deviceset="GND" device=""/>
-<part name="C4" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C4" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND23" library="PowerTags" deviceset="GND" device=""/>
-<part name="C5" library="capacitors" deviceset="CPOL-EU" device="E2.5-6"/>
+<part name="C5" library="capacitors" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
 <part name="GND24" library="PowerTags" deviceset="GND" device=""/>
 <part name="TMP1" library="SmartHomePLC_Licenta" deviceset="TMP36" device="" value="TMP36"/>
 <part name="GND27" library="PowerTags" deviceset="GND" device=""/>
-<part name="C12" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
-<part name="C13" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C12" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
+<part name="C13" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="P+12" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+13" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C14" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C14" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
-<part name="R44" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8"/>
+<part name="R44" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+14" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C23" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C23" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND28" library="SparkFun" deviceset="GND" device=""/>
 <part name="DAC" library="adafruit" deviceset="MCP4921" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
@@ -24014,7 +24018,7 @@ EC12E series with push-on switch</description>
 <part name="P+15" library="PowerTags" deviceset="+5V" device=""/>
 <part name="P+16" library="PowerTags" deviceset="+5V" device=""/>
 <part name="IC7" library="atmel" deviceset="AT24C*" device="P"/>
-<part name="S10" library="switch-misc" deviceset="DS03" device=""/>
+<part name="S10" library="switch-misc" deviceset="DS03" device="" value="3DIP_SW"/>
 <part name="R46" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R47" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R48" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
@@ -24033,15 +24037,15 @@ EC12E series with push-on switch</description>
 <part name="P+20" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
-<part name="JP13" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="SENSORS" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="IC8" library="SmartHomePLC_Licenta" deviceset="MCP23017" device="SP"/>
 <part name="GND43" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+21" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C15" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C15" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND44" library="PowerTags" deviceset="GND" device=""/>
 <part name="JP14" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="JP15" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="S11" library="switch-misc" deviceset="DS03" device=""/>
+<part name="S11" library="switch-misc" deviceset="DS03" device="" value="3DIP_SW"/>
 <part name="R49" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R50" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R51" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
@@ -24050,20 +24054,20 @@ EC12E series with push-on switch</description>
 <part name="IC9" library="SmartHomePLC_Licenta" deviceset="MCP23017" device="SP"/>
 <part name="GND46" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+23" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C16" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C16" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND47" library="PowerTags" deviceset="GND" device=""/>
 <part name="JP16" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="JP17" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="S12" library="switch-misc" deviceset="DS03" device=""/>
+<part name="S12" library="switch-misc" deviceset="DS03" device="" value="3DIP_SW"/>
 <part name="R52" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R53" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R54" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="P+24" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND48" library="PowerTags" deviceset="GND" device=""/>
-<part name="JP18" library="SmartHomePLC_Licenta" deviceset="M03" device="LONGPADS"/>
+<part name="IR" library="SmartHomePLC_Licenta" deviceset="M03" device="LONGPADS"/>
 <part name="GND49" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+25" library="PowerTags" deviceset="+5V" device=""/>
-<part name="C17" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C17" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND50" library="SparkFun" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun" deviceset="JOYSTICK" device="PTH" value="JOYSTICK"/>
 <part name="U$6" library="SparkFun" deviceset="5V" device=""/>
@@ -24080,7 +24084,7 @@ EC12E series with push-on switch</description>
 <part name="K7" library="SmartHomePLC_Licenta" deviceset="G2RA" device=""/>
 <part name="K8" library="SmartHomePLC_Licenta" deviceset="G2RA" device=""/>
 <part name="JP20" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="IC10" library="Integrated Circuits" deviceset="ULN2803A" device=""/>
+<part name="IC10" library="Integrated Circuits" deviceset="ULN2803A" device="" value="ULN2803"/>
 <part name="GND62" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+27" library="PowerTags" deviceset="+5V" device=""/>
 <part name="OD1" library="SmartHomePLC_Licenta" deviceset="MKDSN1,5/8-5,08" device=""/>
@@ -24088,7 +24092,7 @@ EC12E series with push-on switch</description>
 <part name="U$8" library="Integrated Circuits" deviceset="25VF512A-33SAE" device=""/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="IC6" library="SmartHomePLC_Licenta" deviceset="74*125" device="N" value="74125N"/>
-<part name="S13" library="switch-misc" deviceset="DS03" device=""/>
+<part name="S13" library="switch-misc" deviceset="DS03" device="" value="3DIP_SW"/>
 <part name="R56" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="R57" library="SmartHomePLC_Licenta" deviceset="REZISTORS" device="RS1/8" value="10k"/>
 <part name="GND65" library="PowerTags" deviceset="GND" device=""/>
@@ -24097,9 +24101,9 @@ EC12E series with push-on switch</description>
 <part name="AUREL_RTX-MID-5V" library="Connettori" deviceset="0059_FH254-110DF08500V" device="" value="FH254-110DF08500V"/>
 <part name="P+28" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND66" library="PowerTags" deviceset="GND" device=""/>
-<part name="C19" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
+<part name="C19" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND67" library="PowerTags" deviceset="GND" device=""/>
-<part name="C20" library="capacitors" deviceset="CPOL-EU" device="E2.5-6"/>
+<part name="C20" library="capacitors" deviceset="CPOL-EU" device="E2.5-6" value="100uF"/>
 <part name="GND68" library="PowerTags" deviceset="GND" device=""/>
 <part name="JP21" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="GND69" library="supply1" deviceset="GND" device=""/>
@@ -24108,14 +24112,14 @@ EC12E series with push-on switch</description>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
 <part name="X2" library="SmartPrj" deviceset="POWERSUPPLY_DC21MM" device="X"/>
 <part name="P+29" library="supply1" deviceset="+5V" device=""/>
-<part name="C21" library="capacitors" deviceset="CPOL-EU" device="E5-10.5"/>
+<part name="C21" library="capacitors" deviceset="CPOL-EU" device="E5-10.5" value="470uF"/>
 <part name="C24" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
-<part name="C25" library="capacitors" deviceset="CPOL-EU" device="E5-10.5"/>
+<part name="C25" library="capacitors" deviceset="CPOL-EU" device="E5-10.5" value="470uF"/>
 <part name="IC11" library="IntegratedCircuits" deviceset="0045_NX1117CE33Z,115" device="" value="NX1117CE33Z"/>
-<part name="C26" library="capacitors" deviceset="CPOL-EU" device="E2.5-6"/>
+<part name="C26" library="capacitors" deviceset="CPOL-EU" device="E2.5-6" value="100uF"/>
 <part name="+3V1" library="PowerTags" deviceset="+3V3" device=""/>
 <part name="GND74" library="supply1" deviceset="GND" device=""/>
-<part name="C27" library="capacitors" deviceset="CPOL-EU" device="E2.5-6"/>
+<part name="C27" library="capacitors" deviceset="CPOL-EU" device="E2.5-6" value="100uF"/>
 <part name="GND75" library="supply1" deviceset="GND" device=""/>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
 <part name="C28" library="SmartHomePLC_Licenta" deviceset="CAPACIOTRS" device="5/2.5" value="100nF"/>
@@ -24146,18 +24150,18 @@ EC12E series with push-on switch</description>
 <part name="C29" library="capacitors" deviceset="C" device="5/2.5" value="100nF"/>
 <part name="GND86" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND87" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP23" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
-<part name="R55" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R58" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R59" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R60" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R61" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R62" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R63" library="rezistors" deviceset="R" device="RS1/8"/>
-<part name="R64" library="rezistors" deviceset="R" device="RS1/8"/>
+<part name="DIP_SW" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="R55" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R58" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R59" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R60" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R61" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R62" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R63" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
+<part name="R64" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
 <part name="P+19" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND88" library="PowerTags" deviceset="GND" device=""/>
-<part name="S22" library="switch-misc" deviceset="DS08" device=""/>
+<part name="S22" library="switch-misc" deviceset="DS08" device="" value="8DIP_SW"/>
 <part name="R17" library="resistor" deviceset="R-US_" device="0411/3V"/>
 <part name="IC13" library="st-microelectronics" deviceset="L298" device=""/>
 <part name="P+30" library="PowerTags" deviceset="+5V" device=""/>
@@ -24172,10 +24176,10 @@ EC12E series with push-on switch</description>
 <part name="R67" library="rezistors" deviceset="R" device="RS1/8" value="10k"/>
 <part name="GND54" library="PowerTags" deviceset="GND" device=""/>
 <part name="P+32" library="PowerTags" deviceset="+5V" device=""/>
-<part name="JP11" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
+<part name="ENCJOY" library="Connettori" deviceset="0058_FH254-108DF08500V" device="" value="FH254-108DF08500V"/>
 <part name="P+34" library="PowerTags" deviceset="+5V" device=""/>
 <part name="GND55" library="PowerTags" deviceset="GND" device=""/>
-<part name="JP19" library="Connettori" deviceset="0057_FH254-106DF08500V" device="_STD" value="FH254-106DF08500V"/>
+<part name="EXT_SENS" library="Connettori" deviceset="0057_FH254-106DF08500V" device="_STD" value="FH254-106DF08500V"/>
 </parts>
 <sheets>
 <sheet>
@@ -24284,10 +24288,10 @@ EC12E series with push-on switch</description>
 <text x="629.92" y="172.72" size="3.81" layer="94">ENCODER</text>
 </plain>
 <instances>
-<instance part="JP1" gate="A" x="27.94" y="203.2" smashed="yes" rot="MR0">
+<instance part="LEDS" gate="A" x="27.94" y="203.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="34.29" y="216.535" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="JP2" gate="A" x="27.94" y="142.24" smashed="yes" rot="MR0">
+<instance part="BUTTONS" gate="A" x="27.94" y="142.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="34.29" y="155.575" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="IC1" gate="G$1" x="68.58" y="203.2"/>
@@ -24328,10 +24332,10 @@ EC12E series with push-on switch</description>
 <instance part="P+2" gate="1" x="193.04" y="177.8"/>
 <instance part="GND2" gate="1" x="86.36" y="101.6"/>
 <instance part="DIS1" gate="G$1" x="73.66" y="325.12"/>
-<instance part="JP3" gate="A" x="25.4" y="292.1" smashed="yes" rot="MR0">
+<instance part="LCDH" gate="A" x="25.4" y="292.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="21.59" y="297.815" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="JP4" gate="A" x="25.4" y="269.24" smashed="yes" rot="MR0">
+<instance part="LCDL" gate="A" x="25.4" y="269.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="21.59" y="277.495" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="CONTRAST" gate="1" x="45.72" y="302.26" smashed="yes">
@@ -24396,7 +24400,7 @@ EC12E series with push-on switch</description>
 <attribute name="NAME" x="180.848" y="292.354" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.69" y="289.179" size="1.778" layer="96"/>
 </instance>
-<instance part="JP5" gate="A" x="119.38" y="325.12" smashed="yes" rot="MR0">
+<instance part="7SEG" gate="A" x="119.38" y="325.12" smashed="yes" rot="MR0">
 <attribute name="NAME" x="115.57" y="333.375" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="GND6" gate="1" x="236.22" y="297.18"/>
@@ -24405,10 +24409,10 @@ EC12E series with push-on switch</description>
 <instance part="GND9" gate="1" x="327.66" y="297.18"/>
 <instance part="GND10" gate="1" x="149.86" y="312.42"/>
 <instance part="P+4" gate="1" x="142.24" y="325.12"/>
-<instance part="IC2" gate="P" x="347.98" y="322.58"/>
-<instance part="C2" gate="G$1" x="355.6" y="325.12"/>
-<instance part="GND11" gate="1" x="347.98" y="307.34"/>
-<instance part="P+5" gate="1" x="347.98" y="335.28"/>
+<instance part="IC2" gate="P" x="340.36" y="322.58"/>
+<instance part="C2" gate="G$1" x="347.98" y="325.12"/>
+<instance part="GND11" gate="1" x="340.36" y="307.34"/>
+<instance part="P+5" gate="1" x="340.36" y="335.28"/>
 <instance part="GND12" gate="1" x="38.1" y="294.64" rot="R90"/>
 <instance part="IC3" gate="G$1" x="200.66" y="220.98"/>
 <instance part="Q1" gate="G$1" x="175.26" y="231.14" rot="R270"/>
@@ -24434,7 +24438,7 @@ EC12E series with push-on switch</description>
 </instance>
 <instance part="C3" gate="G$1" x="243.84" y="223.52"/>
 <instance part="GND16" gate="1" x="243.84" y="213.36"/>
-<instance part="JP8" gate="A" x="414.02" y="167.64" smashed="yes">
+<instance part="COMMUNICATION" gate="A" x="414.02" y="167.64" smashed="yes">
 <attribute name="NAME" x="407.67" y="180.975" size="1.778" layer="95"/>
 </instance>
 <instance part="GND19" gate="1" x="378.46" y="177.8" rot="R270"/>
@@ -24453,7 +24457,7 @@ EC12E series with push-on switch</description>
 <instance part="R39" gate="1" x="160.02" y="60.96"/>
 <instance part="R40" gate="1" x="175.26" y="60.96"/>
 <instance part="R41" gate="1" x="190.5" y="60.96"/>
-<instance part="JP9" gate="A" x="27.94" y="33.02" smashed="yes" rot="MR0">
+<instance part="POTS" gate="A" x="27.94" y="33.02" smashed="yes" rot="MR0">
 <attribute name="NAME" x="34.29" y="46.355" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="P+10" gate="1" x="190.5" y="81.28"/>
@@ -24521,7 +24525,7 @@ EC12E series with push-on switch</description>
 <instance part="P+20" gate="1" x="513.08" y="83.82"/>
 <instance part="GND41" gate="1" x="510.54" y="33.02"/>
 <instance part="GND42" gate="1" x="381" y="129.54"/>
-<instance part="JP13" gate="A" x="414.02" y="111.76" smashed="yes">
+<instance part="SENSORS" gate="A" x="414.02" y="111.76" smashed="yes">
 <attribute name="NAME" x="407.67" y="125.095" size="1.778" layer="95"/>
 </instance>
 <instance part="IC8" gate="G$1" x="485.14" y="246.38"/>
@@ -24558,7 +24562,7 @@ EC12E series with push-on switch</description>
 <instance part="R54" gate="G$1" x="568.96" y="228.6" rot="R90"/>
 <instance part="P+24" gate="1" x="574.04" y="238.76"/>
 <instance part="GND48" gate="1" x="561.34" y="193.04"/>
-<instance part="JP18" gate="G$1" x="401.32" y="48.26" rot="MR0"/>
+<instance part="IR" gate="G$1" x="401.32" y="48.26" rot="MR0"/>
 <instance part="GND49" gate="1" x="388.62" y="25.4"/>
 <instance part="P+25" gate="1" x="391.16" y="63.5"/>
 <instance part="C17" gate="G$1" x="375.92" y="38.1"/>
@@ -24585,7 +24589,7 @@ EC12E series with push-on switch</description>
 <instance part="P+27" gate="1" x="619.76" y="25.4"/>
 <instance part="OD1" gate="-1" x="769.62" y="48.26" smashed="yes" rot="MR90">
 <attribute name="NAME" x="768.731" y="51.308" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="741.68" y="59.563" size="1.778" layer="96" rot="MR180"/>
+<attribute name="VALUE" x="744.22" y="62.103" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="OD1" gate="-2" x="764.54" y="48.26" rot="MR90"/>
 <instance part="OD1" gate="-3" x="759.46" y="48.26" rot="MR90"/>
@@ -24596,7 +24600,7 @@ EC12E series with push-on switch</description>
 <instance part="OD1" gate="-8" x="734.06" y="48.26" rot="MR90"/>
 <instance part="OD2" gate="-1" x="810.26" y="48.26" smashed="yes" rot="MR90">
 <attribute name="NAME" x="809.371" y="51.308" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="784.86" y="59.563" size="1.778" layer="96" rot="MR180"/>
+<attribute name="VALUE" x="784.86" y="62.103" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="OD2" gate="-2" x="805.18" y="48.26" rot="MR90"/>
 <instance part="OD2" gate="-3" x="800.1" y="48.26" rot="MR90"/>
@@ -24626,8 +24630,8 @@ EC12E series with push-on switch</description>
 <instance part="P+28" gate="1" x="574.04" y="330.2"/>
 <instance part="GND66" gate="1" x="551.18" y="307.34"/>
 <instance part="C19" gate="G$1" x="563.88" y="317.5" smashed="yes">
-<attribute name="NAME" x="555.752" y="316.103" size="1.778" layer="95"/>
-<attribute name="VALUE" x="555.244" y="312.801" size="1.778" layer="96"/>
+<attribute name="NAME" x="565.912" y="318.643" size="1.778" layer="95"/>
+<attribute name="VALUE" x="565.404" y="312.801" size="1.778" layer="96"/>
 </instance>
 <instance part="GND67" gate="1" x="563.88" y="307.34"/>
 <instance part="C20" gate="G$1" x="574.04" y="317.5"/>
@@ -24651,20 +24655,23 @@ EC12E series with push-on switch</description>
 <attribute name="NAME" x="748.792" y="318.643" size="1.778" layer="95"/>
 <attribute name="VALUE" x="748.284" y="315.341" size="1.778" layer="96"/>
 </instance>
-<instance part="C25" gate="G$1" x="741.68" y="320.04"/>
+<instance part="C25" gate="G$1" x="741.68" y="320.04" smashed="yes">
+<attribute name="NAME" x="735.203" y="320.5226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="732.663" y="315.4426" size="1.778" layer="96"/>
+</instance>
 <instance part="IC11" gate="G$1" x="779.78" y="325.12"/>
 <instance part="C26" gate="G$1" x="764.54" y="320.04"/>
 <instance part="+3V1" gate="G$1" x="355.6" y="165.1"/>
 <instance part="GND74" gate="1" x="764.54" y="309.88"/>
-<instance part="C27" gate="G$1" x="805.18" y="320.04"/>
+<instance part="C27" gate="G$1" x="802.64" y="320.04"/>
 <instance part="GND75" gate="1" x="779.78" y="309.88"/>
-<instance part="GND76" gate="1" x="805.18" y="309.88"/>
+<instance part="GND76" gate="1" x="802.64" y="309.88"/>
 <instance part="C28" gate="G$1" x="815.34" y="320.04" smashed="yes">
-<attribute name="NAME" x="807.212" y="318.643" size="1.778" layer="95"/>
-<attribute name="VALUE" x="806.704" y="315.341" size="1.778" layer="96"/>
+<attribute name="NAME" x="817.372" y="321.183" size="1.778" layer="95"/>
+<attribute name="VALUE" x="816.864" y="315.341" size="1.778" layer="96"/>
 </instance>
 <instance part="GND77" gate="1" x="815.34" y="309.88"/>
-<instance part="+3V2" gate="G$1" x="805.18" y="332.74"/>
+<instance part="+3V2" gate="G$1" x="802.64" y="332.74"/>
 <instance part="IC12" gate="NC1" x="701.04" y="330.2"/>
 <instance part="GND73" gate="1" x="701.04" y="307.34"/>
 <instance part="L1" gate="G$1" x="731.52" y="332.74"/>
@@ -24700,7 +24707,10 @@ EC12E series with push-on switch</description>
 <instance part="D19" gate="1" x="744.22" y="241.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="742.188" y="240.03" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X3" gate="-1" x="690.88" y="264.16" rot="MR0"/>
+<instance part="X3" gate="-1" x="690.88" y="264.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="687.832" y="263.271" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="695.96" y="268.097" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="X3" gate="-2" x="690.88" y="259.08" rot="MR0"/>
 <instance part="X3" gate="-3" x="690.88" y="254" rot="MR0"/>
 <instance part="X3" gate="-4" x="690.88" y="248.92" rot="MR0"/>
@@ -24716,17 +24726,41 @@ EC12E series with push-on switch</description>
 </instance>
 <instance part="GND86" gate="1" x="759.46" y="266.7"/>
 <instance part="GND87" gate="1" x="858.52" y="238.76"/>
-<instance part="JP23" gate="A" x="485.14" y="137.16" smashed="yes" rot="MR0">
+<instance part="DIP_SW" gate="A" x="485.14" y="137.16" smashed="yes" rot="MR0">
 <attribute name="NAME" x="491.49" y="150.495" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="R55" gate="G$1" x="505.46" y="154.94" rot="R90"/>
-<instance part="R58" gate="G$1" x="510.54" y="154.94" rot="R90"/>
-<instance part="R59" gate="G$1" x="515.62" y="154.94" rot="R90"/>
-<instance part="R60" gate="G$1" x="520.7" y="154.94" rot="R90"/>
-<instance part="R61" gate="G$1" x="525.78" y="154.94" rot="R90"/>
-<instance part="R62" gate="G$1" x="530.86" y="154.94" rot="R90"/>
-<instance part="R63" gate="G$1" x="535.94" y="154.94" rot="R90"/>
-<instance part="R64" gate="G$1" x="541.02" y="154.94" rot="R90"/>
+<instance part="R55" gate="G$1" x="505.46" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="504.0884" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="503.301" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R58" gate="G$1" x="510.54" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="509.1684" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="508.381" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R59" gate="G$1" x="515.62" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="514.2484" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="513.461" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R60" gate="G$1" x="520.7" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="519.3284" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="518.541" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R61" gate="G$1" x="525.78" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="524.4084" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="523.621" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R62" gate="G$1" x="530.86" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="529.4884" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="528.701" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R63" gate="G$1" x="535.94" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="534.5684" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="533.781" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R64" gate="G$1" x="541.02" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="539.6484" y="151.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="538.861" y="158.75" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="P+19" gate="1" x="541.02" y="170.18"/>
 <instance part="GND88" gate="1" x="505.46" y="104.14"/>
 <instance part="S22" gate="A" x="515.62" y="119.38"/>
@@ -24753,68 +24787,68 @@ EC12E series with push-on switch</description>
 <instance part="R67" gate="G$1" x="739.14" y="149.86" rot="R270"/>
 <instance part="GND54" gate="1" x="421.64" y="101.6"/>
 <instance part="P+32" gate="1" x="388.62" y="101.6"/>
-<instance part="JP11" gate="A" x="568.96" y="134.62" smashed="yes" rot="MR0">
+<instance part="ENCJOY" gate="A" x="568.96" y="134.62" smashed="yes" rot="MR0">
 <attribute name="NAME" x="575.31" y="147.955" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="P+34" gate="1" x="594.36" y="157.48"/>
 <instance part="GND55" gate="1" x="591.82" y="119.38"/>
-<instance part="JP19" gate="A" x="317.5" y="43.18"/>
+<instance part="EXT_SENS" gate="A" x="317.5" y="43.18"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="LEDS" gate="A" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="I1"/>
 <wire x1="30.48" y1="213.36" x2="55.88" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="LEDS" gate="A" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="I2"/>
 <wire x1="30.48" y1="210.82" x2="55.88" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="LEDS" gate="A" pin="3"/>
 <pinref part="IC1" gate="G$1" pin="I3"/>
 <wire x1="30.48" y1="208.28" x2="55.88" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="LEDS" gate="A" pin="4"/>
 <pinref part="IC1" gate="G$1" pin="I4"/>
 <wire x1="30.48" y1="205.74" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="LEDS" gate="A" pin="5"/>
 <pinref part="IC1" gate="G$1" pin="I5"/>
 <wire x1="30.48" y1="203.2" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="LEDS" gate="A" pin="6"/>
 <pinref part="IC1" gate="G$1" pin="I6"/>
 <wire x1="30.48" y1="200.66" x2="55.88" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="7"/>
+<pinref part="LEDS" gate="A" pin="7"/>
 <pinref part="IC1" gate="G$1" pin="I7"/>
 <wire x1="30.48" y1="198.12" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="8"/>
+<pinref part="LEDS" gate="A" pin="8"/>
 <pinref part="IC1" gate="G$1" pin="I8"/>
 <wire x1="30.48" y1="195.58" x2="55.88" y2="195.58" width="0.1524" layer="91"/>
 </segment>
@@ -24935,18 +24969,18 @@ EC12E series with push-on switch</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="355.6" y1="320.04" x2="355.6" y2="312.42" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="312.42" x2="347.98" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="320.04" x2="347.98" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="312.42" x2="340.36" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="P" pin="VSS"/>
-<wire x1="347.98" y1="312.42" x2="347.98" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="312.42" x2="340.36" y2="314.96" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="347.98" y1="309.88" x2="347.98" y2="312.42" width="0.1524" layer="91"/>
-<junction x="347.98" y="312.42"/>
+<wire x1="340.36" y1="309.88" x2="340.36" y2="312.42" width="0.1524" layer="91"/>
+<junction x="340.36" y="312.42"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="5"/>
+<pinref part="LCDH" gate="A" pin="5"/>
 <wire x1="27.94" y1="292.1" x2="33.02" y2="292.1" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="4"/>
+<pinref part="LCDH" gate="A" pin="4"/>
 <wire x1="33.02" y1="292.1" x2="33.02" y2="294.64" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="294.64" x2="27.94" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -24975,7 +25009,7 @@ EC12E series with push-on switch</description>
 <wire x1="243.84" y1="215.9" x2="243.84" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP8" gate="A" pin="2"/>
+<pinref part="COMMUNICATION" gate="A" pin="2"/>
 <wire x1="411.48" y1="175.26" x2="388.62" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="388.62" y1="175.26" x2="388.62" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -25215,7 +25249,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="GND49" gate="1" pin="GND"/>
 <wire x1="388.62" y1="27.94" x2="388.62" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JP18" gate="G$1" pin="2"/>
+<pinref part="IR" gate="G$1" pin="2"/>
 <wire x1="388.62" y1="48.26" x2="393.7" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -25346,7 +25380,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="C27" gate="G$1" pin="-"/>
 <pinref part="GND76" gate="1" pin="GND"/>
-<wire x1="805.18" y1="314.96" x2="805.18" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="802.64" y1="314.96" x2="802.64" y2="312.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND77" gate="1" pin="GND"/>
@@ -25462,14 +25496,14 @@ EC12E series with push-on switch</description>
 <pinref part="GND53" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP11" gate="A" pin="6"/>
+<pinref part="ENCJOY" gate="A" pin="6"/>
 <wire x1="571.5" y1="132.08" x2="591.82" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND55" gate="1" pin="GND"/>
 <wire x1="591.82" y1="132.08" x2="591.82" y2="121.92" width="0.1524" layer="91"/>
 <label x="576.58" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP19" gate="A" pin="6"/>
+<pinref part="EXT_SENS" gate="A" pin="6"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="314.96" y1="38.1" x2="304.8" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="38.1" x2="304.8" y2="33.02" width="0.1524" layer="91"/>
@@ -25655,12 +25689,12 @@ EC12E series with push-on switch</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VDD"/>
-<wire x1="347.98" y1="330.2" x2="347.98" y2="332.74" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="332.74" x2="355.6" y2="332.74" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="330.2" x2="340.36" y2="332.74" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="332.74" x2="347.98" y2="332.74" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="355.6" y1="332.74" x2="355.6" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="332.74" x2="347.98" y2="327.66" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
-<junction x="347.98" y="332.74"/>
+<junction x="340.36" y="332.74"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VDD"/>
@@ -25676,7 +25710,7 @@ EC12E series with push-on switch</description>
 <wire x1="340.36" y1="261.62" x2="340.36" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP8" gate="A" pin="1"/>
+<pinref part="COMMUNICATION" gate="A" pin="1"/>
 <wire x1="411.48" y1="177.8" x2="391.16" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="177.8" x2="391.16" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -25804,7 +25838,7 @@ EC12E series with push-on switch</description>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="55.88" x2="276.86" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP19" gate="A" pin="5"/>
+<pinref part="EXT_SENS" gate="A" pin="5"/>
 <wire x1="314.96" y1="40.64" x2="304.8" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="40.64" x2="304.8" y2="55.88" width="0.1524" layer="91"/>
 <junction x="304.8" y="55.88"/>
@@ -25925,7 +25959,7 @@ EC12E series with push-on switch</description>
 </segment>
 <segment>
 <pinref part="P+25" gate="1" pin="+5V"/>
-<pinref part="JP18" gate="G$1" pin="3"/>
+<pinref part="IR" gate="G$1" pin="3"/>
 <wire x1="393.7" y1="50.8" x2="391.16" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="50.8" x2="391.16" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="1"/>
@@ -26113,12 +26147,12 @@ EC12E series with push-on switch</description>
 </segment>
 <segment>
 <pinref part="P+32" gate="1" pin="+5V"/>
-<pinref part="JP13" gate="A" pin="8"/>
+<pinref part="SENSORS" gate="A" pin="8"/>
 <wire x1="411.48" y1="104.14" x2="411.48" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="411.48" y1="99.06" x2="388.62" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP11" gate="A" pin="5"/>
+<pinref part="ENCJOY" gate="A" pin="5"/>
 <wire x1="571.5" y1="134.62" x2="594.36" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="134.62" x2="594.36" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="P+34" gate="1" pin="+5V"/>
@@ -26136,14 +26170,14 @@ EC12E series with push-on switch</description>
 <wire x1="88.9" y1="127" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
 <junction x="86.36" y="129.54"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="BUTTONS" gate="A" pin="1"/>
 <wire x1="30.48" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <junction x="86.36" y="152.4"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="BUTTONS" gate="A" pin="2"/>
 <wire x1="30.48" y1="149.86" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="149.86" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
@@ -26168,7 +26202,7 @@ EC12E series with push-on switch</description>
 <wire x1="119.38" y1="127" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
 <junction x="116.84" y="129.54"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="BUTTONS" gate="A" pin="3"/>
 <wire x1="30.48" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
 <junction x="116.84" y="147.32"/>
 </segment>
@@ -26184,7 +26218,7 @@ EC12E series with push-on switch</description>
 <wire x1="134.62" y1="127" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
 <junction x="132.08" y="129.54"/>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="BUTTONS" gate="A" pin="4"/>
 <wire x1="30.48" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
 <junction x="132.08" y="144.78"/>
 </segment>
@@ -26200,7 +26234,7 @@ EC12E series with push-on switch</description>
 <wire x1="149.86" y1="127" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <junction x="147.32" y="129.54"/>
-<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="BUTTONS" gate="A" pin="5"/>
 <wire x1="30.48" y1="142.24" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
 <junction x="147.32" y="142.24"/>
 </segment>
@@ -26216,7 +26250,7 @@ EC12E series with push-on switch</description>
 <wire x1="165.1" y1="127" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
 <junction x="162.56" y="129.54"/>
-<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="BUTTONS" gate="A" pin="6"/>
 <wire x1="30.48" y1="139.7" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
 <junction x="162.56" y="139.7"/>
 </segment>
@@ -26232,7 +26266,7 @@ EC12E series with push-on switch</description>
 <wire x1="180.34" y1="127" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
 <junction x="177.8" y="129.54"/>
-<pinref part="JP2" gate="A" pin="7"/>
+<pinref part="BUTTONS" gate="A" pin="7"/>
 <wire x1="30.48" y1="137.16" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
 <junction x="177.8" y="137.16"/>
 </segment>
@@ -26248,7 +26282,7 @@ EC12E series with push-on switch</description>
 <wire x1="195.58" y1="127" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="129.54" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
 <junction x="193.04" y="129.54"/>
-<pinref part="JP2" gate="A" pin="8"/>
+<pinref part="BUTTONS" gate="A" pin="8"/>
 <wire x1="30.48" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
 <junction x="193.04" y="134.62"/>
 </segment>
@@ -26265,14 +26299,14 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="DIS1" gate="G$1" pin="E"/>
 <wire x1="68.58" y1="314.96" x2="68.58" y2="266.7" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="6"/>
+<pinref part="LCDL" gate="A" pin="6"/>
 <wire x1="27.94" y1="266.7" x2="68.58" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="R/W"/>
-<pinref part="JP4" gate="A" pin="7"/>
+<pinref part="LCDL" gate="A" pin="7"/>
 <wire x1="66.04" y1="314.96" x2="66.04" y2="264.16" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="264.16" x2="27.94" y2="264.16" width="0.1524" layer="91"/>
 </segment>
@@ -26281,14 +26315,14 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="DIS1" gate="G$1" pin="RS"/>
 <wire x1="63.5" y1="314.96" x2="63.5" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="8"/>
+<pinref part="LCDL" gate="A" pin="8"/>
 <wire x1="63.5" y1="261.62" x2="27.94" y2="261.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D0"/>
-<pinref part="JP4" gate="A" pin="5"/>
+<pinref part="LCDL" gate="A" pin="5"/>
 <wire x1="71.12" y1="314.96" x2="71.12" y2="269.24" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="269.24" x2="27.94" y2="269.24" width="0.1524" layer="91"/>
 </segment>
@@ -26296,7 +26330,7 @@ EC12E series with push-on switch</description>
 <net name="N$38" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D1"/>
-<pinref part="JP4" gate="A" pin="4"/>
+<pinref part="LCDL" gate="A" pin="4"/>
 <wire x1="73.66" y1="314.96" x2="73.66" y2="271.78" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="271.78" x2="27.94" y2="271.78" width="0.1524" layer="91"/>
 </segment>
@@ -26304,7 +26338,7 @@ EC12E series with push-on switch</description>
 <net name="N$39" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D2"/>
-<pinref part="JP4" gate="A" pin="3"/>
+<pinref part="LCDL" gate="A" pin="3"/>
 <wire x1="76.2" y1="314.96" x2="76.2" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="274.32" x2="27.94" y2="274.32" width="0.1524" layer="91"/>
 </segment>
@@ -26312,7 +26346,7 @@ EC12E series with push-on switch</description>
 <net name="N$40" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D3"/>
-<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="LCDL" gate="A" pin="2"/>
 <wire x1="78.74" y1="314.96" x2="78.74" y2="276.86" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="276.86" x2="27.94" y2="276.86" width="0.1524" layer="91"/>
 </segment>
@@ -26320,7 +26354,7 @@ EC12E series with push-on switch</description>
 <net name="N$41" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D4"/>
-<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="LCDL" gate="A" pin="1"/>
 <wire x1="81.28" y1="314.96" x2="81.28" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="279.4" x2="27.94" y2="279.4" width="0.1524" layer="91"/>
 </segment>
@@ -26328,7 +26362,7 @@ EC12E series with push-on switch</description>
 <net name="N$42" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D5"/>
-<pinref part="JP3" gate="A" pin="8"/>
+<pinref part="LCDH" gate="A" pin="8"/>
 <wire x1="83.82" y1="314.96" x2="83.82" y2="284.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="284.48" x2="27.94" y2="284.48" width="0.1524" layer="91"/>
 </segment>
@@ -26336,7 +26370,7 @@ EC12E series with push-on switch</description>
 <net name="N$43" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D6"/>
-<pinref part="JP3" gate="A" pin="7"/>
+<pinref part="LCDH" gate="A" pin="7"/>
 <wire x1="86.36" y1="314.96" x2="86.36" y2="287.02" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="287.02" x2="27.94" y2="287.02" width="0.1524" layer="91"/>
 </segment>
@@ -26344,7 +26378,7 @@ EC12E series with push-on switch</description>
 <net name="N$44" class="0">
 <segment>
 <pinref part="DIS1" gate="G$1" pin="D7"/>
-<pinref part="JP3" gate="A" pin="6"/>
+<pinref part="LCDH" gate="A" pin="6"/>
 <wire x1="88.9" y1="314.96" x2="88.9" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="289.56" x2="27.94" y2="289.56" width="0.1524" layer="91"/>
 </segment>
@@ -26678,34 +26712,34 @@ EC12E series with push-on switch</description>
 <net name="N$60" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="IA"/>
-<pinref part="JP5" gate="A" pin="1"/>
+<pinref part="7SEG" gate="A" pin="1"/>
 <wire x1="152.4" y1="335.28" x2="121.92" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="IB"/>
-<pinref part="JP5" gate="A" pin="2"/>
+<pinref part="7SEG" gate="A" pin="2"/>
 <wire x1="152.4" y1="332.74" x2="121.92" y2="332.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$62" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="IC"/>
-<pinref part="JP5" gate="A" pin="3"/>
+<pinref part="7SEG" gate="A" pin="3"/>
 <wire x1="152.4" y1="330.2" x2="121.92" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="ID"/>
-<pinref part="JP5" gate="A" pin="4"/>
+<pinref part="7SEG" gate="A" pin="4"/>
 <wire x1="152.4" y1="327.66" x2="121.92" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="5"/>
+<pinref part="7SEG" gate="A" pin="5"/>
 <wire x1="121.92" y1="325.12" x2="137.16" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="325.12" x2="137.16" y2="307.34" width="0.1524" layer="91"/>
@@ -26714,7 +26748,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$65" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="6"/>
+<pinref part="7SEG" gate="A" pin="6"/>
 <wire x1="121.92" y1="322.58" x2="134.62" y2="322.58" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="322.58" x2="134.62" y2="302.26" width="0.1524" layer="91"/>
@@ -26723,7 +26757,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$66" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="7"/>
+<pinref part="7SEG" gate="A" pin="7"/>
 <wire x1="121.92" y1="320.04" x2="132.08" y2="320.04" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="320.04" x2="132.08" y2="297.18" width="0.1524" layer="91"/>
@@ -26732,7 +26766,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$67" class="0">
 <segment>
-<pinref part="JP5" gate="A" pin="8"/>
+<pinref part="7SEG" gate="A" pin="8"/>
 <wire x1="121.92" y1="317.5" x2="129.54" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="317.5" x2="129.54" y2="292.1" width="0.1524" layer="91"/>
@@ -26761,7 +26795,7 @@ EC12E series with push-on switch</description>
 <pinref part="IC4" gate="G$1" pin="SCL"/>
 <wire x1="299.72" y1="243.84" x2="299.72" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="243.84" x2="299.72" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="JP8" gate="A" pin="3"/>
+<pinref part="COMMUNICATION" gate="A" pin="3"/>
 <wire x1="411.48" y1="172.72" x2="370.84" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="172.72" x2="299.72" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="172.72" x2="299.72" y2="208.28" width="0.1524" layer="91"/>
@@ -26807,7 +26841,7 @@ EC12E series with push-on switch</description>
 <wire x1="347.98" y1="241.3" x2="302.26" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="205.74" x2="302.26" y2="170.18" width="0.1524" layer="91"/>
 <junction x="302.26" y="205.74"/>
-<pinref part="JP8" gate="A" pin="4"/>
+<pinref part="COMMUNICATION" gate="A" pin="4"/>
 <wire x1="302.26" y1="170.18" x2="373.38" y2="170.18" width="0.1524" layer="91"/>
 <label x="396.24" y="170.18" size="1.778" layer="95"/>
 <label x="226.06" y="205.74" size="1.778" layer="95"/>
@@ -26958,7 +26992,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="JP8" gate="A" pin="5"/>
+<pinref part="COMMUNICATION" gate="A" pin="5"/>
 <wire x1="411.48" y1="167.64" x2="396.24" y2="167.64" width="0.1524" layer="91"/>
 <label x="396.24" y="167.64" size="1.778" layer="95"/>
 </segment>
@@ -26980,7 +27014,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="JP8" gate="A" pin="6"/>
+<pinref part="COMMUNICATION" gate="A" pin="6"/>
 <wire x1="411.48" y1="165.1" x2="396.24" y2="165.1" width="0.1524" layer="91"/>
 <label x="396.24" y="165.1" size="1.778" layer="95"/>
 </segment>
@@ -26997,7 +27031,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="JP8" gate="A" pin="7"/>
+<pinref part="COMMUNICATION" gate="A" pin="7"/>
 <wire x1="411.48" y1="162.56" x2="396.24" y2="162.56" width="0.1524" layer="91"/>
 <label x="396.24" y="162.56" size="1.778" layer="95"/>
 </segment>
@@ -27066,7 +27100,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$88" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="1"/>
+<pinref part="POTS" gate="A" pin="1"/>
 <wire x1="30.48" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="43.18" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R34" gate="1" pin="S"/>
@@ -27075,7 +27109,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$89" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="2"/>
+<pinref part="POTS" gate="A" pin="2"/>
 <wire x1="30.48" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="40.64" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R35" gate="1" pin="S"/>
@@ -27084,7 +27118,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$93" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="3"/>
+<pinref part="POTS" gate="A" pin="3"/>
 <wire x1="30.48" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="38.1" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R36" gate="1" pin="S"/>
@@ -27093,7 +27127,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$94" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="4"/>
+<pinref part="POTS" gate="A" pin="4"/>
 <wire x1="30.48" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="35.56" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R37" gate="1" pin="S"/>
@@ -27102,7 +27136,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$95" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="5"/>
+<pinref part="POTS" gate="A" pin="5"/>
 <wire x1="30.48" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="33.02" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R38" gate="1" pin="S"/>
@@ -27111,7 +27145,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$96" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="6"/>
+<pinref part="POTS" gate="A" pin="6"/>
 <wire x1="30.48" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="30.48" x2="167.64" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R39" gate="1" pin="S"/>
@@ -27120,7 +27154,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$97" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="7"/>
+<pinref part="POTS" gate="A" pin="7"/>
 <wire x1="30.48" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="27.94" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R40" gate="1" pin="S"/>
@@ -27129,7 +27163,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$98" class="0">
 <segment>
-<pinref part="JP9" gate="A" pin="8"/>
+<pinref part="POTS" gate="A" pin="8"/>
 <wire x1="30.48" y1="25.4" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="25.4" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R41" gate="1" pin="S"/>
@@ -27290,7 +27324,7 @@ EC12E series with push-on switch</description>
 <label x="388.62" y="337.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP8" gate="A" pin="8"/>
+<pinref part="COMMUNICATION" gate="A" pin="8"/>
 <wire x1="411.48" y1="160.02" x2="396.24" y2="160.02" width="0.1524" layer="91"/>
 <label x="396.24" y="160.02" size="1.778" layer="95"/>
 </segment>
@@ -27303,9 +27337,9 @@ EC12E series with push-on switch</description>
 <wire x1="266.7" y1="91.44" x2="373.38" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="91.44" x2="373.38" y2="111.76" width="0.1524" layer="91"/>
 <label x="386.08" y="111.76" size="1.778" layer="95"/>
-<pinref part="JP19" gate="A" pin="4"/>
+<pinref part="EXT_SENS" gate="A" pin="4"/>
 <wire x1="314.96" y1="43.18" x2="302.26" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="JP13" gate="A" pin="5"/>
+<pinref part="SENSORS" gate="A" pin="5"/>
 <wire x1="411.48" y1="111.76" x2="373.38" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -27322,7 +27356,7 @@ EC12E series with push-on switch</description>
 <wire x1="220.98" y1="45.72" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="99.06" x2="370.84" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="99.06" x2="370.84" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="JP13" gate="A" pin="1"/>
+<pinref part="SENSORS" gate="A" pin="1"/>
 <wire x1="370.84" y1="121.92" x2="411.48" y2="121.92" width="0.1524" layer="91"/>
 <label x="386.08" y="121.92" size="1.778" layer="95"/>
 <wire x1="236.22" y1="45.72" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
@@ -27342,7 +27376,7 @@ EC12E series with push-on switch</description>
 <wire x1="322.58" y1="71.12" x2="375.92" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="71.12" x2="375.92" y2="109.22" width="0.1524" layer="91"/>
 <label x="386.08" y="109.22" size="1.778" layer="95"/>
-<pinref part="JP13" gate="A" pin="6"/>
+<pinref part="SENSORS" gate="A" pin="6"/>
 <wire x1="411.48" y1="109.22" x2="375.92" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -27752,11 +27786,11 @@ EC12E series with push-on switch</description>
 <net name="IR" class="0">
 <segment>
 <wire x1="370.84" y1="66.04" x2="370.84" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="JP18" gate="G$1" pin="1"/>
+<pinref part="IR" gate="G$1" pin="1"/>
 <wire x1="370.84" y1="45.72" x2="393.7" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="66.04" x2="403.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="66.04" x2="403.86" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="JP13" gate="A" pin="7"/>
+<pinref part="SENSORS" gate="A" pin="7"/>
 <wire x1="411.48" y1="106.68" x2="403.86" y2="106.68" width="0.1524" layer="91"/>
 <label x="403.86" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -27770,7 +27804,7 @@ EC12E series with push-on switch</description>
 <pinref part="U2" gate="G$1" pin="V"/>
 <wire x1="762" y1="139.7" x2="762" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="762" y1="101.6" x2="599.44" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="JP11" gate="A" pin="1"/>
+<pinref part="ENCJOY" gate="A" pin="1"/>
 <wire x1="599.44" y1="101.6" x2="599.44" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="599.44" y1="144.78" x2="571.5" y2="144.78" width="0.1524" layer="91"/>
 <label x="576.58" y="144.78" size="1.778" layer="95"/>
@@ -27783,7 +27817,7 @@ EC12E series with push-on switch</description>
 <pinref part="U2" gate="G$1" pin="H"/>
 <wire x1="759.46" y1="137.16" x2="759.46" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="759.46" y1="104.14" x2="601.98" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="JP11" gate="A" pin="2"/>
+<pinref part="ENCJOY" gate="A" pin="2"/>
 <wire x1="601.98" y1="104.14" x2="601.98" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="601.98" y1="142.24" x2="571.5" y2="142.24" width="0.1524" layer="91"/>
 <label x="576.58" y="142.24" size="1.778" layer="95"/>
@@ -27796,7 +27830,7 @@ EC12E series with push-on switch</description>
 <pinref part="U2" gate="G$1" pin="SEL+"/>
 <pinref part="R67" gate="G$1" pin="2"/>
 <wire x1="739.14" y1="144.78" x2="739.14" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP11" gate="A" pin="8"/>
+<pinref part="ENCJOY" gate="A" pin="8"/>
 <wire x1="571.5" y1="127" x2="596.9" y2="127" width="0.1524" layer="91"/>
 <wire x1="596.9" y1="127" x2="596.9" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="596.9" y1="99.06" x2="739.14" y2="99.06" width="0.1524" layer="91"/>
@@ -27812,7 +27846,7 @@ EC12E series with push-on switch</description>
 <wire x1="452.12" y1="139.7" x2="444.5" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="96.52" x2="383.54" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="96.52" x2="383.54" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="JP13" gate="A" pin="2"/>
+<pinref part="SENSORS" gate="A" pin="2"/>
 <wire x1="383.54" y1="119.38" x2="411.48" y2="119.38" width="0.1524" layer="91"/>
 <label x="386.08" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -28242,18 +28276,18 @@ EC12E series with push-on switch</description>
 <pinref part="IC11" gate="G$1" pin="OUT@1"/>
 <pinref part="C27" gate="G$1" pin="+"/>
 <wire x1="789.94" y1="327.66" x2="792.48" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="792.48" y1="327.66" x2="805.18" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="805.18" y1="327.66" x2="805.18" y2="322.58" width="0.1524" layer="91"/>
+<wire x1="792.48" y1="327.66" x2="802.64" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="802.64" y1="327.66" x2="802.64" y2="322.58" width="0.1524" layer="91"/>
 <pinref part="IC11" gate="G$1" pin="OUT"/>
 <wire x1="789.94" y1="330.2" x2="792.48" y2="330.2" width="0.1524" layer="91"/>
 <wire x1="792.48" y1="330.2" x2="792.48" y2="327.66" width="0.1524" layer="91"/>
 <junction x="792.48" y="327.66"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="805.18" y1="327.66" x2="815.34" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="802.64" y1="327.66" x2="815.34" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="815.34" y1="327.66" x2="815.34" y2="322.58" width="0.1524" layer="91"/>
-<junction x="805.18" y="327.66"/>
+<junction x="802.64" y="327.66"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="805.18" y1="330.2" x2="805.18" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="802.64" y1="330.2" x2="802.64" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$192" class="0">
@@ -28291,7 +28325,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R55" gate="G$1" pin="1"/>
 <wire x1="505.46" y1="149.86" x2="505.46" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="1"/>
+<pinref part="DIP_SW" gate="A" pin="1"/>
 <wire x1="487.68" y1="147.32" x2="505.46" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="16"/>
 <wire x1="505.46" y1="127" x2="505.46" y2="147.32" width="0.1524" layer="91"/>
@@ -28300,7 +28334,7 @@ EC12E series with push-on switch</description>
 </net>
 <net name="N$199" class="0">
 <segment>
-<pinref part="JP23" gate="A" pin="2"/>
+<pinref part="DIP_SW" gate="A" pin="2"/>
 <wire x1="487.68" y1="144.78" x2="508" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R58" gate="G$1" pin="1"/>
 <wire x1="508" y1="144.78" x2="510.54" y2="144.78" width="0.1524" layer="91"/>
@@ -28314,7 +28348,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R59" gate="G$1" pin="1"/>
 <wire x1="515.62" y1="142.24" x2="515.62" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="3"/>
+<pinref part="DIP_SW" gate="A" pin="3"/>
 <wire x1="487.68" y1="142.24" x2="510.54" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="14"/>
 <wire x1="510.54" y1="142.24" x2="515.62" y2="142.24" width="0.1524" layer="91"/>
@@ -28326,7 +28360,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R60" gate="G$1" pin="1"/>
 <wire x1="520.7" y1="139.7" x2="520.7" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="4"/>
+<pinref part="DIP_SW" gate="A" pin="4"/>
 <wire x1="487.68" y1="139.7" x2="513.08" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="13"/>
 <wire x1="513.08" y1="139.7" x2="520.7" y2="139.7" width="0.1524" layer="91"/>
@@ -28338,7 +28372,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R61" gate="G$1" pin="1"/>
 <wire x1="525.78" y1="137.16" x2="525.78" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="5"/>
+<pinref part="DIP_SW" gate="A" pin="5"/>
 <wire x1="487.68" y1="137.16" x2="515.62" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="12"/>
 <wire x1="515.62" y1="137.16" x2="525.78" y2="137.16" width="0.1524" layer="91"/>
@@ -28350,7 +28384,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R62" gate="G$1" pin="1"/>
 <wire x1="530.86" y1="134.62" x2="530.86" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="6"/>
+<pinref part="DIP_SW" gate="A" pin="6"/>
 <wire x1="487.68" y1="134.62" x2="518.16" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="11"/>
 <wire x1="518.16" y1="134.62" x2="530.86" y2="134.62" width="0.1524" layer="91"/>
@@ -28362,7 +28396,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R63" gate="G$1" pin="1"/>
 <wire x1="535.94" y1="132.08" x2="535.94" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="7"/>
+<pinref part="DIP_SW" gate="A" pin="7"/>
 <wire x1="487.68" y1="132.08" x2="520.7" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="10"/>
 <wire x1="520.7" y1="132.08" x2="535.94" y2="132.08" width="0.1524" layer="91"/>
@@ -28374,7 +28408,7 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R64" gate="G$1" pin="1"/>
 <wire x1="541.02" y1="129.54" x2="541.02" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP23" gate="A" pin="8"/>
+<pinref part="DIP_SW" gate="A" pin="8"/>
 <wire x1="487.68" y1="129.54" x2="523.24" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="S22" gate="A" pin="9"/>
 <wire x1="523.24" y1="129.54" x2="541.02" y2="129.54" width="0.1524" layer="91"/>
@@ -28518,7 +28552,7 @@ EC12E series with push-on switch</description>
 <wire x1="650.24" y1="121.92" x2="635" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="650.24" y1="134.62" x2="650.24" y2="121.92" width="0.1524" layer="91"/>
 <junction x="650.24" y="121.92"/>
-<pinref part="JP11" gate="A" pin="4"/>
+<pinref part="ENCJOY" gate="A" pin="4"/>
 <wire x1="571.5" y1="137.16" x2="635" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="635" y1="137.16" x2="635" y2="121.92" width="0.1524" layer="91"/>
 <label x="576.58" y="137.16" size="1.778" layer="95"/>
@@ -28532,7 +28566,7 @@ EC12E series with push-on switch</description>
 <pinref part="SW1" gate="G$1" pin="B"/>
 <pinref part="R65" gate="G$1" pin="1"/>
 <wire x1="660.4" y1="134.62" x2="660.4" y2="127" width="0.1524" layer="91"/>
-<pinref part="JP11" gate="A" pin="3"/>
+<pinref part="ENCJOY" gate="A" pin="3"/>
 <wire x1="571.5" y1="139.7" x2="637.54" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="637.54" y1="139.7" x2="637.54" y2="127" width="0.1524" layer="91"/>
 <label x="576.58" y="139.7" size="1.778" layer="95"/>
@@ -28546,7 +28580,7 @@ EC12E series with push-on switch</description>
 <wire x1="683.26" y1="154.94" x2="683.26" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="622.3" y1="154.94" x2="683.26" y2="154.94" width="0.1524" layer="91"/>
 <junction x="683.26" y="154.94"/>
-<pinref part="JP11" gate="A" pin="7"/>
+<pinref part="ENCJOY" gate="A" pin="7"/>
 <wire x1="571.5" y1="129.54" x2="622.3" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="622.3" y1="129.54" x2="622.3" y2="154.94" width="0.1524" layer="91"/>
 <label x="576.58" y="129.54" size="1.778" layer="95"/>
@@ -28554,24 +28588,24 @@ EC12E series with push-on switch</description>
 </net>
 <net name="EXTERN_SIG1" class="0">
 <segment>
-<pinref part="JP19" gate="A" pin="3"/>
+<pinref part="EXT_SENS" gate="A" pin="3"/>
 <wire x1="314.96" y1="45.72" x2="307.34" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="45.72" x2="307.34" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="96.52" x2="365.76" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="96.52" x2="365.76" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="JP13" gate="A" pin="4"/>
+<pinref part="SENSORS" gate="A" pin="4"/>
 <wire x1="365.76" y1="114.3" x2="411.48" y2="114.3" width="0.1524" layer="91"/>
 <label x="386.08" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXTERN_SIG2" class="0">
 <segment>
-<pinref part="JP19" gate="A" pin="2"/>
+<pinref part="EXT_SENS" gate="A" pin="2"/>
 <wire x1="314.96" y1="48.26" x2="309.88" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="48.26" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="93.98" x2="368.3" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="93.98" x2="368.3" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="JP13" gate="A" pin="3"/>
+<pinref part="SENSORS" gate="A" pin="3"/>
 <wire x1="368.3" y1="116.84" x2="411.48" y2="116.84" width="0.1524" layer="91"/>
 <label x="386.08" y="116.84" size="1.778" layer="95"/>
 </segment>
